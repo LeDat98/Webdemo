@@ -59,7 +59,7 @@ def text_To_Image():
         text_t_img = f"{translated_text},{styles}"
         print(text_t_img)
         #Nhập key dalle e 
-        openai.api_key = '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'
+        openai.api_key = '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'
         openai.Model.list()
         # Chạy model 
         response = openai.Image.create(prompt=text_t_img, n = 3, size= "1024x1024")
@@ -192,4 +192,4 @@ def Help_FAQ():
 
 #start server 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port = 9999, debug = True)
+    app.run()
