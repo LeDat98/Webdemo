@@ -59,7 +59,7 @@ def text_To_Image():
         text_t_img = f"{translated_text},{styles}"
         print(text_t_img)
         #Nhập key dalle e 
-        openai.api_key = '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'
+        openai.api_key = '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'
         openai.Model.list()
         # Chạy model 
         response = openai.Image.create(prompt=text_t_img, n = 3, size= "1024x1024")
